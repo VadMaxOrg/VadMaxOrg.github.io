@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhukov Vadym m Yevheniiovych FOP</title>
+    <style>
+        :root {
+            --bg-color: #000;
+            --text-color: #fff;
+            --accent-color: #fff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, main, footer {
+            width: 90%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+        section {
+            margin-top: 2rem;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        .contact-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--accent-color);
+            background: transparent;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .contact-button:hover {
+            background: var(--accent-color);
+            color: var(--bg-color);
+        }
+        footer {
+            margin-top: auto;
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zhukov Vadym m Yevheniiovych FOP</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>We are a sole proprietorship (FOP) based in Kharkiv, Ukraine, delivering high‑quality software solutions.</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Address: 174 korpus 6 kv. 8, Aerokosmichnyi prospekt, Kharkiv, 61124, Kharkivska obl., Ukraine</p>
+            <p>Phone: <a href="tel:+380951950936">+38&nbsp;095&nbsp;195&nbsp;09&nbsp;36</a></p>
+            <p>Email: <a href="mailto:vadmax.org@gmail.com">vadmax.org@gmail.com</a></p>
+            <a class="contact-button" href="mailto:vadmax.org@gmail.com?subject=Inquiry">Get in touch</a>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> Zhukov Vadym m Yevheniiovych FOP. All rights reserved.
+    </footer>
+
+<script>
+    // Update the copyright year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<!-- Structured data for better search/verification -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zhukov Vadym m Yevheniiovych FOP",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "174 korpus 6 kv. 8, Aerokosmichnyi prospekt",
+    "addressLocality": "Kharkiv",
+    "postalCode": "61124",
+    "addressRegion": "Kharkivska obl.",
+    "addressCountry": "UA"
+  },
+  "telephone": "+380951950936",
+  "email": "vadmax.org@gmail.com",
+  "url": "https://<YOUR_GITHUB_USERNAME>.github.io/<REPO_NAME>/"
+}
+</script>
+</body>
+</html>
